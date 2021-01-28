@@ -15,7 +15,7 @@ public class Mpanel extends JPanel{
 
     public Mpanel(){
         setLayout(null);
-        img = new DrawImg(100, 100, "C:\\java 4\\28.01.2021\\light_PNG14440.png");
+        img = new DrawImg(900, 492, "C:\\java 4\\28.01.2021\\png-clipart-dvd-logo-blu-ray-disc-copy-protection-dvd-text-logo.png");
         this.timer = new Timer(2, new ActionListener() {
             int c = 0;
             @Override
