@@ -6,6 +6,6 @@ public class Window extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Первое задание");
-
+        getContentPane().add(new Mpanel());
     }
 }

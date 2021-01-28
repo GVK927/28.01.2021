@@ -15,18 +15,20 @@ public class Mpanel extends JPanel{
 
     public Mpanel(){
         setLayout(null);
-        this.timer = new Timer(20, new ActionListener(){
+        img = new DrawImg(20, 20, "C:\\java 4\\28.01.2021\\light_PNG14440.png");
+        this.timer = new Timer(2, new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                img.setX(img.getX()+1);
-                img.setY(img.getY()+1);
+                img.x++;
+                img.y++;
                 repaint();
-                if(img.getX()==800||img.getY()==800){
-                    img.setX(0);
-                    img.setY(0);
+                if(img.x==780||img.y==780){
+                    timer.stop();
                 }
             }
         });
-
+        img.x = 20;
+        img.y = 20;
+        timer.start();
     }
 }
