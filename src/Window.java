@@ -10,8 +10,8 @@ public class Window extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Первый урок");
-        getContentPane().add(new Mpanel(), BorderLayout.CENTER);
-        getContentPane().setBackground(Color.BLACK);
+        getContentPane().add(new Mpanel()).setBackground(Color.BLACK);
+        getContentPane();
         pack();
     }
 }
